@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate ID Example</title>
+    <style>
+        #duplicate {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="duplicate">This is the first div with id "duplicate".</div>
+    <div id="duplicate2">This is the second div with id "duplicate".</div>
+    <div id="duplicate">This is the second div with id "duplicate".</div>
+    <div id="duplicate">This is the second div with id "duplicate".</div>
+    <div id="duplicate">This is the second div with id "duplicate".</div>
+    <div id="duplicate">This is the second div with id "duplicate".</div>
+    <script>
+        var element = document.getElementById("duplicate");
+        element.textContent = "This text is modified by JavaScript.";
+    </script>
+</body>
+</html>
